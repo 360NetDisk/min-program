@@ -1,0 +1,24 @@
+<import src="../../templates/common-list.wxml" />
+
+  <scroll-view style="height:100%;" scroll-y="true" lower-threshold="100rpx">
+
+    <view class="topic-common-list" >
+      <view class="topic-list-item">
+        <image src="/images/jianbo.jpg" class="cover">
+        </image>
+        <view class="topic-content-title">
+          <text>java基础</text>
+        </view>
+        <view class="topic-content-title-line"></view>
+        <view class="topic-content-brief">
+          <text>java基础知识查漏补缺</text>
+        </view>
+      </view>
+    </view>
+
+    <view class='container'>
+    <view>
+     <template is="tempCommonList" data="{{postsList}}" />
+    </view>
+    </view>
+    </scroll-view>

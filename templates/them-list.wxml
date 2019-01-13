@@ -1,0 +1,25 @@
+<template name='themList'>
+<scroll-view style="height:100%;" scroll-y="true" lower-threshold="100rpx">
+    <view class="topic-common-list">
+        <block wx:key="id" wx:for="{{categoriesList}}">
+            <view class="list-item">
+                <view>
+                    <image src="/images/jianbo.jpg" class="cover" data-item="{{item.name}}" data-id="{{item.id}}" bindtap="redictIndex"></image>
+                </view>
+                <view class="content-title" data-item="{{item.name}}" data-id="{{item.id}}" bindtap="redictIndex">
+                    <view class="topic-name">
+                        <text>java基础</text>
+                    </view>
+                    <view class="topic-img">
+                        <image src="/images/subscription.png" data-subflag="{{item.subflag}}" data-id="{{item.id}}" catchtap="postsub" class="img-menu"></image>
+                    </view>
+                </view>
+                <view class="content-brief" data-item="{{item.name}}" data-id="{{item.id}}">
+                    <text>java基础知识查漏补缺</text>
+                </view>
+            </view>
+
+        </block>
+    </view>
+</scroll-view>
+</template>

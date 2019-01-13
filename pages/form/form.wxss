@@ -1,0 +1,14 @@
+@import "/common/lib/weui.wxss";
+
+/* pages/user/experiences/publish/publish.wxss */
+page {
+  background: #f8f8f8;
+  font-size: 12px
+}
+.weui-cell{
+  font-size: 12px;
+}
+
+.them{
+  height: 120px;
+}

@@ -1,0 +1,4 @@
+<import src="../../templates/them-list.wxml" />
+<view>
+     <template is="themList" data="{{categoriesList}}" />
+    </view>
